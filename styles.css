@@ -11,12 +11,13 @@
 	overflow: hidden;
 	position: relative;
 	color: white;
-	width: 100%;
-	transition: all 0.3s linear;
+	flex: 1;
+	transition: flex 0.3s linear;
+	cursor: pointer;
 }
 
 .panel.active {
-	width: 800%;
+	flex: 5;
 }
 
 .panel img {

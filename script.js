@@ -4,8 +4,10 @@ let currentActive= panels[0];
 
 panels.forEach(panel => {
 	panel.addEventListener("click", () => {
-		panel.classList.add("active");
-		currentActive.classList.remove("active");
-		currentActive= panel;
+		if(currentActive !== panel) {
+			panel.classList.add("active");
+			currentActive.classList.remove("active");
+			currentActive= panel;
+		}
 	})
 })
